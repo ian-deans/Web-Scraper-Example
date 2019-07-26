@@ -1,0 +1,24 @@
+<div class="page">
+    <header class="flx j-center a-center header">
+        <h2>News Scraper</h2>
+    </header>
+    <nav class="flx column a-center j-around container-navbar">
+        <a href="/articles/scrape">Scrape New Articles</a>
+        <a href="#">Saved Articles</a>
+    </nav>
+    <div class="flx column j-start a-center container-articles">
+        {{#each articles}}
+        <article>
+            <h4>{{title}}</h4>
+            <span>{{summary}}</span>
+            <p>
+                <a target="_blank" href={{url}}>
+                    Go to article
+                </a>
+            </p>
+        </article>
+        {{/each}}
+
+
+    </div>
+</div>
